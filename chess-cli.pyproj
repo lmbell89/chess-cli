@@ -1,0 +1,52 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>6234ec3b-8477-45f7-ad45-a195d5bddf18</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>chess_cli.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>chess-cli</Name>
+    <RootNamespace>chess-cli</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="chess_cli.py" />
+    <Compile Include="modules\boards.py" />
+    <Compile Include="modules\main.py" />
+    <Compile Include="modules\pieces.py" />
+    <Compile Include="tests.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+    <Content Include="modules\__pycache__\boards.cpython-37.pyc" />
+    <Content Include="modules\__pycache__\boards.cpython-38.pyc" />
+    <Content Include="modules\__pycache__\main.cpython-37.pyc" />
+    <Content Include="modules\__pycache__\main.cpython-38.pyc" />
+    <Content Include="modules\__pycache__\pieces.cpython-37.pyc" />
+    <Content Include="modules\__pycache__\pieces.cpython-38.pyc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="modules\" />
+    <Folder Include="modules\__pycache__\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
