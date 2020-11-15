@@ -11,15 +11,15 @@
 <h2>Commands</h2>
 
 <p>
-	The following commands are available when running the app:
+The following commands are available when running the app:
 
-	<ul>
-		<li>help: prints a list of the available commands (as shown below)</li>
-		<li>load_position: Provide a FEN to load a game from that position</li>
-		<li>make_move: Make a move. Provide the move in uci format e.g. e2e4 d7d8q</li>
-		<li>print_board: Print a representation of the board. Dots are empty squares, capital letters are white pieces</li>
-		<li>print_fen: Print the FEN for the current position in the game</li>
-		<li>print_move_notation: Print the algebraic notation for a move in uci format. This does not actually make the move</li>
-		<li>print_game_state: Prints whether the game is checkmate, stalemate, or else which colour is next to move</li>
-	</ul>
+<ul>
+<li>help: prints a list of the available commands (as shown below)</li>
+<li>load_position: Provide a FEN to load a game from that position</li>
+<li>make_move: Make a move. Provide the move in uci format e.g. e2e4 d7d8q</li>
+<li>print_board: Print a representation of the board. Dots are empty squares, capital letters are white pieces</li>
+<li>print_fen: Print the FEN for the current position in the game</li>
+<li>print_move_notation: Print the algebraic notation for a move in uci format. This does not actually make the move</li>
+<li>print_game_state: Prints whether the game is checkmate, stalemate, or else which colour is next to move</li>
+</ul>
 </p>
